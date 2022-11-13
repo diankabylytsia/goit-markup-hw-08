@@ -1,0 +1,14 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--top-color);
+  background-color: var(--medium-color);
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.link {
+  text-decoration: none;
+}
