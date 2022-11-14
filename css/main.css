@@ -116,12 +116,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  height: 60px;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    height: 80px;
-  }
 }
 
 .navigation {
@@ -273,12 +267,32 @@ body {
   }
 }
 
-.contacts__icon {
+.contacts__icon-telephone {
   fill: var(--hero-color);
   transition: fill var(--animate);
 }
-.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
+.contacts__link:hover .contacts__icon-telephone, .contacts__link:focus .contacts__icon-telephone {
   fill: var(--back-color);
+}
+@media screen and (max-width: 1199px) {
+  .contacts__icon-telephone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+.contacts__icon-envelope {
+  fill: var(--hero-color);
+  transition: fill var(--animate);
+}
+.contacts__link:hover .contacts__icon-envelope, .contacts__link:focus .contacts__icon-envelope {
+  fill: var(--back-color);
+}
+@media screen and (max-width: 1199px) {
+  .contacts__icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .mob-menu-open {
@@ -479,8 +493,20 @@ body {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features__list {
@@ -1312,4 +1338,7 @@ body {
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--animate);
+}
+.portfolio-link:focus .portfolio-text-wrap {
+  transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */

@@ -97,4 +97,7 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform var(--animate);
+  .portfolio-link:focus & {
+    transform: translateY(0);
+  }
 }
