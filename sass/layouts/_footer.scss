@@ -6,6 +6,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-contact {
+  margin-bottom: 60px;
+}
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -60,7 +63,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-top: 60px;
   color: var(--medium-color);
 }
 .footer-soc-list {
@@ -76,7 +78,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
   transition: background-color var(--animate);
   &:hover,
   &:focus {
@@ -87,7 +88,9 @@
 .footer-soc-icon {
   fill: var(--medium-color);
 }
-
+.follow {
+  margin-top: 60px;
+}
 .follow-input {
   width: 100%;
   max-width: 358px;
@@ -142,8 +145,9 @@
 @media screen and (min-width: 768px) {
   .footer-container-wrapper {
     display: flex;
+    gap: 93px;
+    align-items: baseline;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
 
   .footer-label {
@@ -163,15 +167,21 @@
   .footer-adress {
     padding: 65px 0;
   }
+  .footer-contact {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
-    gap: 70px;
+    align-items: baseline;
+    gap: 93px;
   }
   .footer-adress {
-    max-height: 252px;
+    background-color: var(--big-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .follow-wrap {
@@ -182,6 +192,7 @@
 
   .follow {
     width: 100%;
+    margin: 0;
   }
   .follow-btn {
     margin: 0;
@@ -193,14 +204,23 @@
   .footer-contact {
     text-align: left;
   }
-  .footer-soc {
-    padding-top: 17px;
-  }
   .footer-soc-title {
     text-align: left;
   }
   .follow-text {
     text-align: left;
-    padding-top: 17px;
+  }
+  .address {
+    margin-top: 20px;
+  }
+  .footer-adress-item {
+    margin-bottom: 9px;
+  }
+  .footer-contacts-list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .follow-input {
+    width: 358px;
+    height: 50px;
   }
 }
